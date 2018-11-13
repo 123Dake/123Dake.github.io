@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>1996 - DengSir</title>
+    <title>大胖子爱小胖子</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 maximum-scale=1.0, user-scalable=0">
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
     <style>
         html {
@@ -16,7 +16,7 @@
             background: #79a8ae;
             color: #CFEBE4;
             font-size: 18px;
-            line-height: 2;
+            line-height: 0;
             letter-spacing: 1.2px;
             margin: 0;
         }
@@ -83,6 +83,7 @@
             text-align: center;
             width: 100%;
             font-weight: bold;
+			line-height: 2;
         }
 
         .text-right {
@@ -97,20 +98,20 @@
 </head>
 
 <body>
-<!--更改为你女朋友的头像-->
+更改为你女朋友的头像
 <div class="cs">
-    <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
+    <img src="https://wx1.sinaimg.cn/orj360/006kaKH5gy1fwiabgane4j30zm0qotd6.jpg" id="logo">
 </div>
-<canvas class="canvas" width="1820" height="905"></canvas>
-<p class="text" style="color: #ed3073;">
-    We fell in love
+<canvas class="canvas" ></canvas>
+<p class="text" style="color: #fff67e;">
+    我们已经相爱了
     <br/>
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("2/20/2018 00:00:00");//这个日期是可以修改的
+        BirthDay = new Date("7/17/2018 00:00:00");//这个日期是可以修改的
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -134,7 +135,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
 			//想说的话
-            S.UI.simulate("娜娜|I'm|ZLOE|Nice|to|Meet|You|#countdown 3|#time");
+            S.UI.simulate("小胖子|我是|爱你的|大胖子|余生|请多指教|#countdown 3|我爱你");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -667,7 +668,7 @@
     }());
     S.init();
 </script>
-//音乐可改
+<!--音乐可改-->
 <audio autoplay="autoplay" loop="loop">
     <source src="http://www.ytmp3.cn/down/32628.mp3" type="audio/mpeg">
 </audio>
